@@ -1,0 +1,376 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+
+
+.main-section {
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.main-section:hover .one button {
+    transform: rotate(360deg) scale(1.3);
+    transition: 1s all ease-in-out;
+}
+
+.navbar-section {
+    width: 85%;
+    height: 10vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    animation-name: navbar;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    /* animation-delay: 2s; */
+}
+
+.navbar-section ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    align-items: center;
+    list-style: none;
+    /* font-size: 10px; */
+    font-size: 20px;
+}
+
+.navbar-section button {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #fda14b;
+    color: white;
+    border: none;
+}
+
+.navbar-section ul li a {
+    color: black;
+    font-size: 20px;
+}
+
+.navbar-section ul li a:hover {
+    text-decoration: underline;
+    color: #d1f9ef;
+}
+
+.navbar-section button:hover {
+    background-color: black;
+    color: #fda14b;
+    transform: scale(1.1);
+    transition: .5s all linear;
+}
+
+.first-section-container {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(56, 213, 218); */
+
+}
+
+.left {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    gap: 30px;
+    margin-left: 250px;
+    animation-name: leftsection;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.left .one {
+    /* border: 2px solid red;    */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.left .two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.left .three {
+    /* border: 1px solid crimson; */
+    width: 500px;
+    border-left: 2.5px solid #ecd8c6;
+}
+.right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+   
+    font-size: 15px;
+    color: grey;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.left .four {
+    /* border: 2px solid red; */
+    display: flex;
+    /* height: 60px ; */
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.right img {
+    width: 500px;
+    margin-right: 150px;
+
+
+    animation-name: rightimage;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    /* filter: drop-shadow(10px 20px 50px rgba(8, 162, 154, 0.42)); */
+
+}
+.shadow {
+    width: 1px;
+    height: 1px;
+    /* border: 1px solid red; */
+    position: absolute;
+    z-index: -1;
+    top: 180px;
+    left: 350px;
+    /* right: 100px; */
+    box-shadow: 0px 5px 150px 70px goldenrod;
+
+    animation-name: shadow;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+}
+.shadow2 {
+    width: 1px;
+    height: 1px;
+    /* border: 1px solid red; */
+    position: absolute;
+    z-index: -1;
+    top: 300px;
+    left: 180px;
+    /* right: 100px; */
+    box-shadow: 0px 5px 150px 70px lightseagreen;
+
+    animation-name: shadow;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+   
+}
+
+
+
+.cards-section {
+    width: 100%;
+    height: 60vh;
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.cards-con {
+    width: 75%;
+    height: 80%;
+    background: rgb(67, 137, 119);
+    background: linear-gradient(4deg, rgba(67, 137, 119, 1) 0%, rgb(93, 192, 167) 100%);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid green; */
+    gap: 50px;
+
+}
+
+.card {
+    width: 320px;
+    height: 350px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: white;
+    margin-top: -250px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.422) 0px 5px 15px;
+
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: .5s all ease-in-out;
+}
+
+.card img {
+    width: 80%;
+    height: 60%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.card h1 {
+    font-size: 20px;
+    width: 80%;
+    font-family: Arial;
+}
+
+.components {
+    width: 90%;
+    height: 30px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.components .m {
+    width: 100px;
+
+    object-fit: cover;
+}
+
+.components img {
+    width: 30px;
+    object-fit: cover;
+}
+
+.components span {
+    margin-left: -20px;
+    font-size: 15px;
+}
+
+.bulb {
+    width: 70px;
+    position: absolute;
+    left: 100px;
+    transform: rotate(-12deg);
+    top: 100px;
+    transform: translateY(-300px);
+    transition: 1s all ease-in-out;
+
+
+}
+
+.main-section:hover .bulb {
+    transform: translateY(0px);
+    transition: 1s all ease-in-out;
+}
+
+.right-saturn {
+    width: 70px;
+    position: absolute;
+    right: 200px;
+    top: 220px;
+
+    transform: translateY(-300px);
+    transition: 1s all ease-in-out;
+
+    
+}
+
+.main-section:hover .right-saturn {
+    transform: translateY(0px);
+
+    transition: 1s all ease-in-out;
+}
+
+.left-saturn {
+    width: 80px;
+    position: absolute;
+    left: 70px;
+    bottom: 430px;
+
+
+   
+}
+
+
+
+.blue-heart {
+    width: 50px;
+    position: absolute;
+    top: 200px;
+    right: 650px;
+
+    animation-name: heart;
+    animation-duration: .4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    transition: 1s all ease-in-out;
+    transform: translateY(-300px);
+
+
+}
+
+.main-section:hover .blue-heart {
+    transform: translateY(0px);
+    transition: 1s all ease-in-out;
+}
+
+.pink-diamond {
+    width: 50px;
+    position: absolute;
+    bottom: 500px;
+    left: 720px;
+    transform: rotate(30deg);
+
+    animation-name: diamond;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.plant {
+    width: 200px;
+    position: absolute;
+    bottom: 30px;
+    right: -30px;
+}
+
+.bottom-right-icon {
+    width: 100px;
+    position: absolute;
+    top: 400px;
+    left: 800px;
+    /* transform: rotate(-30deg); */
+}

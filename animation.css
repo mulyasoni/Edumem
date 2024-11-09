@@ -1,0 +1,87 @@
+@keyframes navbar {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes heart {
+    from {
+
+        scale: 1;
+    }
+
+    to {
+        scale: 1.2;
+    }
+}
+
+
+
+@keyframes diamond {
+    from {
+        transform: translate(0px);
+    }
+
+    to {
+        transform: translate(10px 10px);
+    }
+}
+
+@keyframes leftsection {
+
+    from {
+        transform: translateX(-1000px);
+
+    }
+
+    to {
+        transform: translateX(0px);
+
+
+
+    }
+}
+
+@keyframes rightimage {
+    from {
+        transform: translateY(-700px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes saturn {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes shadow {
+    0% {
+        opacity: 0;
+    }
+/* 
+    90% {
+        opacity: 0;
+    } */
+
+    100% {
+        opacity: 1;
+    }
+}
